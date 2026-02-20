@@ -1,0 +1,300 @@
+🏥 DocSpot – Doctor Appointment Booking System
+
+A full-featured MERN Stack Doctor Appointment Booking System with secure authentication and role-based access for Patients, Doctors, and Administrators.
+
+🚀 Overview
+
+DocSpot is a comprehensive healthcare appointment management platform that enables:
+
+Patients to book and manage appointments
+
+Doctors to manage schedules and patient interactions
+
+Admins to control platform governance and approvals
+
+Built using the MERN Stack (MongoDB, Express, React, Node.js) with secure JWT authentication.
+
+✨ Key Features
+👤 Patient Module
+
+User Registration & Login (JWT-based Authentication)
+
+Browse Doctors by Specialization
+
+Book & Manage Appointments
+
+Upload Medical Documents
+
+View Appointment History
+
+Real-time Status Notifications
+
+🩺 Doctor Module
+
+Doctor Application & Admin Approval System
+
+Manage Appointments (Approve / Reject / Complete)
+
+Add Patient Notes
+
+Manage Availability & Schedule
+
+Profile Management
+
+🛠 Admin Module
+
+Approve / Reject Doctor Applications
+
+Manage Users & Doctors
+
+Monitor Appointments Platform-wide
+
+View Platform Statistics & Analytics
+
+🛠 Tech Stack
+🔹 Backend
+
+Node.js
+
+Express.js
+
+MongoDB & Mongoose
+
+JWT Authentication
+
+bcryptjs (Password Hashing)
+
+Multer (File Uploads)
+
+CORS
+
+🔹 Frontend
+
+React 18
+
+React Router DOM
+
+Bootstrap & React Bootstrap
+
+Material UI
+
+Ant Design
+
+Axios
+
+Lucide React Icons
+
+📂 Project Structure
+docspot-appointment-system/
+│
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middlewares/
+│   ├── routes/
+│   ├── schemas/
+│   ├── scripts/
+│   └── index.js
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   └── App.js
+│
+├── Docs/
+├── package.json
+└── README.md
+
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
+git clone https://github.com/yourusername/docspot-appointment-system.git
+cd docspot-appointment-system
+
+2️⃣ Install Dependencies
+# Root
+npm install
+
+# Backend
+cd backend
+npm install
+
+# Frontend
+cd ../frontend
+npm install
+
+3️⃣ Environment Variables
+📌 Backend .env
+
+Create a .env file inside backend/:
+
+PORT=5000
+MONGODB_URI=mongodb://localhost:27017/docspot
+JWT_SECRET=your_super_secret_key
+NODE_ENV=development
+
+📌 Frontend .env
+
+Create a .env file inside frontend/:
+
+REACT_APP_API_URL=http://localhost:5000/api
+
+4️⃣ Database Setup
+cd backend
+
+# Optional: Clear DB
+node scripts/clearDatabase.js
+
+# Seed Sample Data
+node scripts/seedDatabaseComplete.js
+
+5️⃣ Run the Application
+Run both backend & frontend together:
+npm run dev
+
+Or separately:
+
+Backend:
+
+cd backend
+npm run dev
+
+
+Frontend:
+
+cd frontend
+npm start
+
+🌐 Application URLs
+
+Frontend → http://localhost:3000
+
+Backend API → http://localhost:5000
+
+🔐 Demo Credentials
+👨‍💼 Admin
+
+Email: admin@docspot.com
+
+Password: password123
+
+🩺 Sample Doctors
+
+dr.michael.johnson.2025.v3@example.com
+ / CardioDoc2025!
+
+dr.sarah.patel.2025.v3@example.com
+ / PediaDoc2025!
+
+dr.emily.chen.2025.v3@example.com
+ / NeuroDoc2025!
+
+👤 Sample Patients
+
+john.doe@example.com
+ / password123
+
+jane.smith@example.com
+ / password123
+
+🔌 API Endpoints
+🔑 Authentication
+POST /api/auth/register
+POST /api/auth/login
+
+👤 User
+GET /api/users/profile
+PUT /api/users/profile
+POST /api/users/apply-doctor
+
+🩺 Doctor
+GET /api/doctors
+GET /api/doctors/appointments
+PUT /api/doctors/appointments/:id/status
+
+🛠 Admin
+GET /api/admin/users
+GET /api/admin/doctors
+PUT /api/admin/doctors/:id/approve
+
+🧪 Testing Guide
+
+Register as a Patient
+
+Apply to Become a Doctor
+
+Login as Admin & Approve Doctor
+
+Book Appointment as Patient
+
+Manage Appointment as Doctor
+
+👥 Team
+
+Team ID: LTVIP2026TMIDS35287
+Team Size: 5
+
+👨‍💻 Ponnada Jaya Chaitanya
+
+Project Lead & Full Stack Coordinator
+
+Architecture Design
+
+Task Management
+
+Integration & Deployment
+
+🎨 Velpuri Posibhavani
+
+Frontend Developer
+
+UI Implementation
+
+API Integration
+
+Responsive Design
+
+⚙️ Kone Veera Sravani
+
+Backend Developer
+
+API Development
+
+Authentication
+
+Business Logic
+
+🖌 Gurugubelli Abhiram
+
+UI/UX Designer
+
+Wireframing
+
+Prototyping
+
+Figma Design
+
+🗄 Polisetti Ambica Prasanna
+
+Database & Testing Engineer
+
+Schema Design
+
+Optimization
+
+Testing & Bug Tracking
+
+🤝 Contributing
+
+Fork the repository
+
+Create your branch
+
+Commit your changes
+
+Push and create a Pull Request
+
+📜 License
+
+This project is developed for educational and academic purposes.
