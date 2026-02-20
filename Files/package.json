@@ -1,0 +1,47 @@
+{
+  "name": "docspot-appointment-system",
+  "version": "1.0.0",
+  "description": "A comprehensive MERN stack doctor appointment booking system",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-server": "cd backend && npm install",
+    "install-client": "cd frontend && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "seed": "cd backend && node scripts/seedDatabaseComplete.js",
+    "clear-db": "cd backend && node scripts/clearDatabase.js"
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "nodejs",
+    "mongodb",
+    "express",
+    "doctor",
+    "appointment",
+    "booking",
+    "healthcare",
+    "medical"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/docspot-appointment-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/docspot-appointment-system/issues"
+  },
+  "homepage": "https://github.com/yourusername/docspot-appointment-system#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
